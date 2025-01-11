@@ -1,0 +1,34 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Fallback OpenAPI",
+    "version": "1.0.0",
+    "description": "This is a fallback OpenAPI definition. The primary OpenAPI document could not be loaded."
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Fallback endpoint",
+        "description": "This endpoint exists to indicate that the OpenAPI definition could not be loaded.",
+        "responses": {
+          "500": {
+            "description": "Primary OpenAPI document failed to load.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "example": "Failed to load OpenAPI document."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
