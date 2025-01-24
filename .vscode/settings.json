@@ -1,0 +1,9 @@
+{
+    "files.insertFinalNewline": true,
+    "editor.formatOnSave": true,
+    "files.eol": "\n",
+    "[markdown]": {
+      "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    }
+  }
+  
